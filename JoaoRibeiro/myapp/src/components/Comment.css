@@ -1,0 +1,25 @@
+.comment{
+        min-width: 500px;
+        padding: 20px;
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+}
+
+.title{
+        font-size: 1.5em;
+        color: rgb(36,36,84);
+        margin-bottom: 20px;
+}
+.text{
+        font-size: 1emm;
+        margin-bottom: 20px;
+}
+
+.author{
+        text-align: right;
+        font-size: .8em;
+        color: black;
+}

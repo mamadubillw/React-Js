@@ -1,0 +1,2 @@
+Na Pasta src temos index.js que ea pasta pricipal onde importamos o react, o index.html ataves do root id, e o nosso app principal 
+depois disso criamos componentes e exportamos importamos os no app e usamos

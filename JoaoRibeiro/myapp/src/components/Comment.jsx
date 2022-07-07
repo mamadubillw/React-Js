@@ -1,12 +1,15 @@
 import React from "react";
 import './Comment.css'
 
-function Comment(){
+function Comment(props){
+        function Maiusculas(texto){
+                return texto.toUpperCase()
+        }
       return(   <>
                 <section className="comment">
-                        <p className="title">Titulo</p>
-                        <p className="text">Texto Commentarion</p>
-                        <p className="author">Autor: x</p>
+                        <p className="title">{Maiusculas(props.titulo)}</p>
+                        <p className="text">Texto Commentario</p>
+                        <p className="author">Autor: {props.author}</p>
                 </section>
         </>
       )

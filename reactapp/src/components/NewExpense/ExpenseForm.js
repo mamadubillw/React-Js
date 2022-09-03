@@ -22,15 +22,17 @@ const ExpenseForm = () =>{
         const submitHandler = (event) =>{
                 event.preventDefault();
 
+                setEnteredAmount = ('');
+                setEnteredDate = ('');
+                setEntredTitle = ('');
+                
                 const expenseData = {
                         title:enteredTitle,
                         amount:enteredAmount,
                         date:new Date(enteredDate)
                 }
                 console.log(expenseData)
-                setEnteredAmount = ('');
-                setEnteredDate = ('');
-                setEntredTitle = ('');
+                
                 
         }
         return <form onSubmit={submitHandler}>

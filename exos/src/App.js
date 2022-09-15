@@ -1,23 +1,40 @@
 import React from "react";
-import { useState } from "react";
+import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses";
 
-// const name = "Mamadu Bilo";
-// const element = <h1>Hello {name}</h1>
 
 function App(){
-       const [count, setCount] = useState(4);
-
-       function decrementCount(){
-        setCount(count - 1);
-       }
-
-       return (
-        <>
-        <button onClick={decrementCount}>-</button>
-        <span>{count}</span>
-        <button>+</button>
-        </>
+       const expenses = [
+              {
+                     id: 'e1',
+                     title: 'Toilett Paper',
+                     amount: 94.12,
+                     date: new Date(2020, 21, 10)
+                 },
+                 {
+                     id: 'e2',
+                     title: 'Car Insurance',
+                     amount: 94.12,
+                     date: new Date(2010, 5, 12)
+                 },
+                 {
+                     id: 'e3',
+                     title: 'New TV',
+                     amount: 94.12,
+                     date: new Date(2022, 5, 11)
+                 }
+       ]  
+       
+       return(
+              <div>
+                     <Expenses items = {expenses}/>
+                     <ExpenseItem />
+                     hello work
+              </div>
        )
+              
+
+
 }
 
 export default  App
